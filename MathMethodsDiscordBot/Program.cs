@@ -2,15 +2,21 @@
 using System.Collections.Generic;
 using Discord;
 using Discord.WebSocket;
+using System.Threading.Tasks;
 using Discord.Commands;
 
 namespace MathMethodsDiscordBot
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.ReadKey();
+            //RunBotAsync().GetAwaiter().GetResult();
+        }
+
+        public async Task RunBotAsync()
+        {
+            //return Task.CompletedTask;
         }
     }
 }
